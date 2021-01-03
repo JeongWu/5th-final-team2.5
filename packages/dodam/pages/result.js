@@ -1,42 +1,11 @@
-import { Typography, Button, Card } from '@dodam/components';
+import { Typography, Button } from '@dodam/components';
+import Recommendation from '../components/Recommendation';
 
 export default function Result() {
   const mode = 1;
   return (
     <>
       <div className="result">
-        <style jsx>
-          {`
-            .result-top {
-              background-color: #fff6d9;
-              padding: 50px;
-              text-align: center;
-
-              height: 289px;
-            }
-
-            .result-image {
-              background: #ffffff 0% 0% no-repeat padding-box;
-              box-shadow: 0px 10px 15px #0000001c;
-              opacity: 1;
-              width: 152px;
-              height: 152px;
-              border-radius: 50%;
-              margin: 20px;
-            }
-            .result-bottom {
-              padding: 50px 10px 20px 10px;
-            }
-
-            .row {
-              padding: 10px;
-            }
-
-            .recommendation {
-              padding: 30px 10px;
-            }
-          `}
-        </style>
         <div className="result-top">
           <Typography className="header" align="center" variant="h5">
             김도담님은
@@ -74,22 +43,45 @@ export default function Result() {
       {mode === 1 && (
         <>
           <div className="result-line"></div>
-          <div className="recommendation">
-            <Typography className="header" align="center" variant="h5" weight="bolder">
-              이 동아리를 추천드려요!
-            </Typography>
-
-            <div className="row">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-            </div>
-
-            <Button fullWidth>더보기</Button>
-          </div>
+          <Recommendation />
         </>
       )}
+      <style jsx>
+        {`
+          .result-top {
+            background: url('circle_particle.svg') 0% 0% no-repeat padding-box,
+              linear-gradient(180deg, #fff6d9 0%, #ffffff 100%, #ffffff 100%) 0% 0% no-repeat padding-box;
+
+            background-size: 367px 211px;
+            padding: 48px;
+            text-align: center;
+
+            height: 289px;
+          }
+          .result-line {
+            width: 360px;
+            height: 4px;
+            background: #eeeeee 0% 0% no-repeat padding-box;
+          }
+
+          .result-image {
+            background: #ffffff 0% 0% no-repeat padding-box;
+            box-shadow: 0px 10px 15px #0000001c;
+            opacity: 1;
+            width: 152px;
+            height: 152px;
+            border-radius: 50%;
+            margin: 16px;
+          }
+          .result-bottom {
+            padding: 48px 8px 16px 8px;
+          }
+
+          .row {
+            padding: 8px;
+          }
+        `}
+      </style>
     </>
   );
 }
