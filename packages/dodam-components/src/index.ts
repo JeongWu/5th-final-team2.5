@@ -31,6 +31,3 @@ export type { NavigationProps } from './components/Navigation';
 export { default as DatePicker } from './components/DatePicker';
 export type { DateProps } from './components/DatePicker';
 
-
-export { default as Card } from './components/Card';
-export type { CardProps } from './components/Card';
