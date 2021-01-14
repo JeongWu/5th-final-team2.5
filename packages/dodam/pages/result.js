@@ -10,21 +10,18 @@ export default function Result() {
           <Typography className="header" align="center" variant="h5">
             김도담님은
           </Typography>
-          <Typography className="header" align="center" variant="h3" weight="bolder">
-            이상적인 세상을
+          <Typography className="header" align="center" variant="h2" weight="bolder">
+            적극적이고 진취적인 성격이군요!
           </Typography>
-          <Typography className="header" align="center" variant="h3" weight="bolder">
-            만들어가시는군요!
-          </Typography>
+
           <img className="result-image" />
         </div>
         <div className="result-bottom">
           <Typography weight="bolder">분석 결과</Typography>
           <Typography>
-            상세 분석 결과입니다 상세분석 결과입니다. 상세 분석 결과입니다 상세분석 결과입니다. 상세분석 결과입니다
-            상세분석 결과입니다. 분석 결과입니다. 상세 분석 결과입니다 상세분석 결과입니다. 상세 분석 결과입니다
-            상세분석 결과입니다. 상세분석 결과입니다 상세분석 결과입니다. 분석 결과입니다. 상세 분석 결과입니다 상세분석
-            결과입니다. 상세분석 결과입니다 상세분석 결과입니다. 분석 결과입니다.
+            당신은 적극적이고, 진취적인 성격입니다. 활동적인 경험을 하면서 친한 사람들과 똘똘 뭉치고 싶어 합니다. 또한
+            당신은 할 일이 많아 조금은 바빠지더라도 자기 자신을 발전시키기 위해 꾸준히 노력합니다. 이러한 성격의
+            당신에게 동틀무렵(밴드), 허리케인(축구)를 추천합니다.
           </Typography>
           <div className="row">
             <Button id="btn-1" outline fullWidth variant="secondary">
@@ -52,7 +49,7 @@ export default function Result() {
             background: url('circle_particle.svg') 0% 0% no-repeat padding-box,
               linear-gradient(180deg, #fff6d9 0%, #ffffff 100%, #ffffff 100%) 0% 0% no-repeat padding-box;
 
-            background-size: 367px 211px;
+            background-size: 367px 164px;
             padding: 48px;
             text-align: center;
 
